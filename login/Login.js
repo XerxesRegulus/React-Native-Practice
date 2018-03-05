@@ -31,10 +31,11 @@ export default class Login extends React.Component {
           </Text>
           <UsernameInput></UsernameInput>
           <PasswordInput></PasswordInput>
-          <Button
-            style={styles.loginButton}
-            onPress={this.logInPress}
-            title="Log in"/>
+          <View style={styles.loginButton}>
+            <Button
+              onPress={this.logInPress}
+              title="Log in"/>
+          </View>
         </View>
       </View>
     )
